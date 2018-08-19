@@ -2,6 +2,9 @@
 
 Pathtastic PHP provides a way to verify that a specified target directory or file is contained within a subpath of a specified required parent directory.
 
+## Requirements
+I haven't test it but you should only need PHP 4.0.0 or above to run pathtastic.  If you want to run the PHPUnit tests then it [requires PHP 7.1 or newer](https://phpunit.de/announcements/phpunit-7.html).
+
 ## Installation
 
 You can install Pathtastic with composer using the following command
