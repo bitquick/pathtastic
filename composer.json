@@ -1,0 +1,16 @@
+{
+    "name": "bitquick/pathtastic",
+    "description": "Methods to determine if a specified file or directory is within another specified directory.",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^7.3"
+    },
+    "homepage": "https://github.com/bitquick/pathtastic",
+    "license": "MIT",
+    "require": {},
+	"autoload": {
+        "psr-0" : {
+            "Bitquick\\Pathtastic" : "src/"
+        }
+    }
+}
