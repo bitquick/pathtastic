@@ -1,7 +1,7 @@
 <?php
 /**
  * tests/PathtasticTest.php
- * 
+ *
  * Unit testing for Bitquick\Pathtastic\Pathtastic class.
  */
 
@@ -83,6 +83,19 @@ class PathtasticTest extends \PHPUnit\Framework\TestCase
             }
         }
 
+
+        public function testingURLToPath() {
+            $URLs = [
+              "https://github.com/bitquick/pathtastic",
+              "http://php.net/manual/en/function.base64-decode.php",
+              "http://php.net/manual/en/function.base64-encode.php",
+              "http://php.net/manual/en/function.str-replace.php"
+            ];
+
+            foreach($URLs as $url) {
+              $this->assertTrue($url == Pathtastic::path2url(Pathtastic::url2path($url)));
+            }
+        }
 
 }
 
